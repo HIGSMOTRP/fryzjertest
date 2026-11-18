@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fryzjertest – nowoczesny salon fryzjerski w Warszawie</title>
+  <meta name="description" content="Fryzjertest – nowoczesny salon fryzjerski w Warszawie. Strzyżenie męskie i damskie, koloryzacja i modelowanie. Umów wizytę online lub zadzwoń: 111 222 333.">
+  <link rel="canonical" href="https://fryzjertestwarszawa.pl/">
+  <meta property="og:title" content="Fryzjertest – nowoczesny salon fryzjerski">
+  <meta property="og:description" content="Strzyżenie męskie i damskie, koloryzacja i modelowanie. Umów wizytę.">
+  <meta property="og:url" content="https://fryzjertestwarszawa.pl/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1b1a19">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#1b1a19',
+            coal: '#262422',
+            ash: '#3a3734',
+            stone: '#a8a29a',
+            bone: '#f1ece4',
+            brass: '#c9a15b',
+            brassdark: '#a98240'
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['Manrope', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-padding-top: 4.5rem; }
+    body { background: #1b1a19; color: #f1ece4; -webkit-tap-highlight-color: transparent; }
+    .hero-bg {
+      background:
+        radial-gradient(60% 50% at 80% 10%, rgba(201,161,91,.16), transparent 70%),
+        linear-gradient(180deg, #1b1a19 0%, #262422 100%);
+    }
+    .hero-line { animation: grow 1.4s .2s ease-out both; transform-origin: left; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .field {
+      width: 100%; background: #1b1a19; border: 1px solid #3a3734; color: #f1ece4;
+      border-radius: .75rem; padding: .85rem 1rem; font-size: 16px; transition: border-color .2s, box-shadow .2s;
+    }
+    .field:focus { outline: none; border-color: #c9a15b; box-shadow: 0 0 0 3px rgba(201,161,91,.25); }
+    .field::placeholder { color: #7d776f; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #c9a15b; outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .hero-line { animation: none; }
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Nawigacja -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-40 transition-colors duration-300" style="padding-top: env(safe-area-inset-top, 0px)">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-5 h-16">
+      <a href="#top" class="font-display text-2xl font-semibold tracking-wide">Fryzjertest</a>
+      <nav class="hidden sm:flex items-center gap-7 text-sm text-bone/80">
+        <a href="#o-nas" class="hover:text-brass transition-colors">O nas</a>
+        <a href="#cennik" class="hover:text-brass transition-colors">Cennik</a>
+        <a href="#rezerwacja" class="hover:text-brass transition-colors">Rezerwacja</a>
+        <a href="#kontakt" class="hover:text-brass transition-colors">Kontakt</a>
+        <a href="#rezerwacja" class="bg-brass hover:bg-brassdark text-ink font-semibold rounded-full px-5 py-2 transition-colors">Umów wizytę</a>
+      </nav>
+      <a href="#rezerwacja" class="sm:hidden text-sm font-semibold text-ink bg-brass rounded-full px-4 py-2">Umów wizytę</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero-bg relative min-h-[100svh] flex items-center overflow-hidden" style="padding-top: env(safe-area-inset-top, 0px)">
+      <div class="hidden lg:block absolute right-16 top-28 bottom-16 w-72 rounded-t-full border border-brass/30" aria-hidden="true"></div>
+      <div class="hidden lg:block absolute right-24 top-36 bottom-24 w-72 rounded-t-full border border-ash" aria-hidden="true"></div>
+      <div class="relative max-w-5xl mx-auto px-5 pt-24 pb-16 w-full">
+        <p class="text-brass font-medium mb-5">Salon fryzjerski w Warszawie</p>
+        <h1 class="font-display font-semibold leading-[.95] text-[4.2rem] sm:text-8xl md:text-9xl">Fryzjertest</h1>
+        <div class="hero-line h-px w-24 sm:w-40 bg-brass my-7"></div>
+        <p class="text-lg sm:text-xl text-bone/80 max-w-md leading-relaxed">
+          Strzyżenie męskie i damskie, koloryzacja i modelowanie. Ponad 2000 klientów zaufało naszym fryzjerom, bo wychodzą od nas z fryzurą, którą naprawdę chcą nosić.
+        </p>
+        <div class="mt-9">
+          <a href="#rezerwacja" class="inline-flex w-full sm:w-auto justify-center items-center bg-brass hover:bg-brassdark text-ink font-semibold rounded-full px-10 py-4 text-base shadow-lg shadow-brass/10 transition-colors">Umów wizytę</a>
+        </div>
+        <dl class="mt-14 grid grid-cols-3 gap-4 sm:gap-10 max-w-xl border-t border-ash pt-7">
+          <div>
+            <dt class="sr-only">Zadowolonych klientów</dt>
+            <dd class="font-display text-4xl sm:text-5xl font-semibold text-brass leading-none">2000+</dd>
+            <dd class="text-stone text-xs sm:text-sm mt-2 leading-snug">zadowolonych klientów</dd>
+          </div>
+          <div>
+            <dt class="sr-only">Lat doświadczenia</dt>
+            <dd class="font-display text-4xl sm:text-5xl font-semibold text-brass leading-none">10+</dd>
+            <dd class="text-stone text-xs sm:text-sm mt-2 leading-snug">lat doświadczenia</dd>
+          </div>
+          <div>
+            <dt class="sr-only">Ocena klientów</dt>
+            <dd class="font-display text-4xl sm:text-5xl font-semibold text-brass leading-none">4,9</dd>
+            <dd class="text-stone text-xs sm:text-sm mt-2 leading-snug">średnia ocen klientów</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- O nas -->
+    <section id="o-nas" class="py-20 sm:py-28 bg-coal">
+      <div class="max-w-5xl mx-auto px-5">
+        <h2 class="font-display text-4xl sm:text-5xl font-semibold max-w-xl leading-tight">Dlaczego ponad 2000 klientów wybrało Fryzjertest</h2>
+        <div class="mt-12 grid gap-5 sm:grid-cols-3">
+          <article class="rounded-2xl bg-ink border border-ash border-t-2 border-t-brass p-7">
+            <svg class="w-9 h-9 text-brass" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.1v5.2L5.2 17a2.4 2.4 0 0 0 2.1 3.5h9.4a2.4 2.4 0 0 0 2.1-3.5l-4.55-8.7V3.1M8.5 3.1h7M7.5 14h9"/></svg>
+            <h3 class="font-display text-2xl font-semibold mt-5">Profesjonalne kosmetyki</h3>
+            <p class="text-stone mt-2 leading-relaxed">Pracujemy na sprawdzonych produktach salonowych, które chronią włos i dają trwały kolor.</p>
+          </article>
+          <article class="rounded-2xl bg-ink border border-ash border-t-2 border-t-brass p-7">
+            <svg class="w-9 h-9 text-brass" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.7"/><circle cx="6" cy="18" r="2.7"/><path stroke-linecap="round" d="M8.2 7.7 20 18M8.2 16.3 20 6"/></svg>
+            <h3 class="font-display text-2xl font-semibold mt-5">Doświadczeni fryzjerzy</h3>
+            <p class="text-stone mt-2 leading-relaxed">Stylistki i fryzjerzy z wieloletnią praktyką. Doradzą cięcie dopasowane do rysów twarzy i stylu życia.</p>
+          </article>
+          <article class="rounded-2xl bg-ink border border-ash border-t-2 border-t-brass p-7">
+            <svg class="w-9 h-9 text-brass" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Zm13 1.5h1.5a2.5 2.5 0 0 1 0 5H17M8 3v2M12 3v2"/></svg>
+            <h3 class="font-display text-2xl font-semibold mt-5">Miła atmosfera</h3>
+            <p class="text-stone mt-2 leading-relaxed">Kawa, spokojna muzyka i czas dla Ciebie. U nas wizyta to chwila odpoczynku, nie pośpiech.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cennik -->
+    <section id="cennik" class="py-20 sm:py-28">
+      <div class="max-w-5xl mx-auto px-5">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5">
+          <div>
+            <h2 class="font-display text-4xl sm:text-5xl font-semibold">Cennik</h2>
+            <p class="text-stone mt-3 max-w-md leading-relaxed">Przejrzyste ceny w złotych. Każda wizyta zaczyna się od krótkiej konsultacji, żebyśmy dobrali efekt do Ciebie.</p>
+          </div>
+          <a href="#rezerwacja" class="inline-flex justify-center items-center border border-brass text-brass hover:bg-brass hover:text-ink font-semibold rounded-full px-7 py-3 text-sm transition-colors self-start sm:self-auto">Umów wizytę</a>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <div class="rounded-2xl bg-coal border border-ash p-6 sm:p-8">
+            <div class="flex items-center gap-3 pb-5 border-b border-ash">
+              <span class="w-1 h-6 bg-brass rounded-full" aria-hidden="true"></span>
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold">Strzyżenie</h3>
+            </div>
+            <ul class="divide-y divide-ash">
+            <li class="group flex items-start justify-between gap-5 py-6">
+              <div class="min-w-0">
+                <h4 class="text-lg sm:text-xl font-semibold">Strzyżenie męskie</h4>
+                <p class="text-stone text-sm mt-1.5 leading-relaxed">Konsultacja, strzyżenie, mycie głowy i stylizacja na koniec.</p>
+                <p class="mt-3 inline-flex items-center gap-1.5 text-xs text-stone">
+                  <svg class="w-3.5 h-3.5 text-brass" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+                  ok. 40 min
+                </p>
+              </div>
+              <p class="font-display text-3xl sm:text-4xl font-semibold text-brass whitespace-nowrap leading-none pt-1">50 zł</p>
+            </li>
+            <li class="group flex items-start justify-between gap-5 py-6">
+              <div class="min-w-0">
+                <h4 class="text-lg sm:text-xl font-semibold">Strzyżenie damskie z modelowaniem</h4>
+                <p class="text-stone text-sm mt-1.5 leading-relaxed">Konsultacja, mycie, strzyżenie oraz modelowanie suszarką lub lokówką.</p>
+                <p class="mt-3 inline-flex items-center gap-1.5 text-xs text-stone">
+                  <svg class="w-3.5 h-3.5 text-brass" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+                  ok. 75 min
+                </p>
+              </div>
+              <p class="font-display text-3xl sm:text-4xl font-semibold text-brass whitespace-nowrap leading-none pt-1">90 zł</p>
+            </li>
+            </ul>
+          </div>
+
+          <div class="rounded-2xl bg-coal border border-ash p-6 sm:p-8">
+            <div class="flex items-center gap-3 pb-5 border-b border-ash">
+              <span class="w-1 h-6 bg-brass rounded-full" aria-hidden="true"></span>
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold">Kolor i stylizacja</h3>
+            </div>
+            <ul class="divide-y divide-ash">
+            <li class="group flex items-start justify-between gap-5 py-6">
+              <div class="min-w-0">
+                <h4 class="text-lg sm:text-xl font-semibold">Koloryzacja (całość)</h4>
+                <p class="text-stone text-sm mt-1.5 leading-relaxed">Dobór odcienia, farbowanie całej długości włosów i pielęgnacja po zabiegu.</p>
+                <p class="mt-3 inline-flex items-center gap-1.5 text-xs text-stone">
+                  <svg class="w-3.5 h-3.5 text-brass" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+                  ok. 2 godz.
+                </p>
+              </div>
+              <p class="font-display text-3xl sm:text-4xl font-semibold text-brass whitespace-nowrap leading-none pt-1">180 zł</p>
+            </li>
+            <li class="group flex items-start justify-between gap-5 py-6">
+              <div class="min-w-0">
+                <h4 class="text-lg sm:text-xl font-semibold">Modelowanie włosów</h4>
+                <p class="text-stone text-sm mt-1.5 leading-relaxed">Układanie na specjalną okazję lub na co dzień, z użyciem profesjonalnych kosmetyków.</p>
+                <p class="mt-3 inline-flex items-center gap-1.5 text-xs text-stone">
+                  <svg class="w-3.5 h-3.5 text-brass" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+                  ok. 45 min
+                </p>
+              </div>
+              <p class="font-display text-3xl sm:text-4xl font-semibold text-brass whitespace-nowrap leading-none pt-1">60 zł</p>
+            </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between rounded-2xl border border-ash px-6 py-5 text-sm text-stone">
+          <p>Cena koloryzacji może się zmienić przy bardzo długich lub gęstych włosach. Ustalimy ją z Tobą przed rozpoczęciem.</p>
+          <p class="text-bone whitespace-nowrap">Płatność: gotówka, karta, BLIK</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rezerwacja -->
+    <section id="rezerwacja" class="py-20 sm:py-28 bg-coal">
+      <div class="max-w-5xl mx-auto px-5 grid gap-10 md:grid-cols-5 md:gap-14">
+        <div class="md:col-span-2">
+          <h2 class="font-display text-4xl sm:text-5xl font-semibold leading-tight">Umów wizytę</h2>
+          <p class="text-stone mt-4 leading-relaxed">Zostaw numer, a oddzwonimy i potwierdzimy termin. Wolisz porozmawiać od razu? Zadzwoń.</p>
+          <a href="tel:111222333" class="mt-7 inline-flex w-full sm:w-auto justify-center items-center gap-3 bg-brass hover:bg-brassdark text-ink font-semibold rounded-full px-8 py-4 transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1L6.6 10.8Z"/></svg>
+            Zadzwoń teraz
+          </a>
+        </div>
+
+        <div class="md:col-span-3">
+          <form id="booking" class="rounded-2xl bg-ink border border-ash p-6 sm:p-8 space-y-5" novalidate>
+            <div>
+              <label for="name" class="block text-sm font-medium mb-2">Imię</label>
+              <input id="name" name="name" type="text" autocomplete="given-name" required class="field" placeholder="Np. Anna">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium mb-2">Numer telefonu</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required class="field" placeholder="Np. 600 700 800">
+            </div>
+            <div>
+              <label for="service" class="block text-sm font-medium mb-2">Usługa</label>
+              <select id="service" name="service" required class="field">
+                <option value="" disabled selected>Wybierz usługę</option>
+                <option>Strzyżenie męskie – 50 zł</option>
+                <option>Strzyżenie damskie z modelowaniem – 90 zł</option>
+                <option>Koloryzacja (całość) – 180 zł</option>
+                <option>Modelowanie włosów – 60 zł</option>
+              </select>
+            </div>
+            <div>
+              <label for="time" class="block text-sm font-medium mb-2">Preferowana godzina</label>
+              <select id="time" name="time" required class="field">
+                <option value="" disabled selected>Wybierz godzinę</option>
+              </select>
+            </div>
+            <p id="error" class="hidden text-sm text-red-300" role="alert">Uzupełnij wszystkie pola. Numer telefonu musi mieć co najmniej 9 cyfr.</p>
+            <button type="submit" class="w-full bg-brass hover:bg-brassdark text-ink font-semibold rounded-full px-8 py-4 text-base transition-colors">Wyślij zgłoszenie</button>
+          </form>
+
+          <div id="success" class="hidden rounded-2xl bg-ink border border-brass p-8 text-center" role="status" aria-live="polite">
+            <div class="mx-auto w-14 h-14 rounded-full bg-brass/15 flex items-center justify-center">
+              <svg class="w-7 h-7 text-brass" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+            </div>
+            <h3 class="font-display text-3xl font-semibold mt-5">Dziękujemy, <span id="s-name"></span>!</h3>
+            <p class="text-stone mt-3 leading-relaxed">Zgłoszenie na <span id="s-service" class="text-bone"></span> w godzinach <span id="s-time" class="text-bone"></span> zostało przyjęte. Oddzwonimy na numer <span id="s-phone" class="text-bone"></span>, żeby potwierdzić termin.</p>
+            <button id="again" type="button" class="mt-6 text-brass hover:text-bone underline underline-offset-4 text-sm">Wyślij kolejne zgłoszenie</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Stopka / Kontakt -->
+  <footer id="kontakt" class="pt-20 pb-10 border-t border-ash" style="padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px))">
+    <div class="max-w-5xl mx-auto px-5">
+      <h2 class="font-display text-4xl sm:text-5xl font-semibold">Kontakt</h2>
+      <div class="mt-10 grid gap-10 sm:grid-cols-3">
+        <div>
+          <h3 class="font-semibold text-brass mb-3">Znajdziesz nas</h3>
+          <address class="not-italic text-bone/90 leading-relaxed">Fryzjertest<br>ul. Przykładowa 15<br>Warszawa</address>
+          <ul class="mt-5 space-y-2">
+            <li><a href="tel:111222333" class="text-lg font-semibold hover:text-brass transition-colors">111 222 333</a></li>
+            <li><a href="mailto:fryzjertest@gmail.com" class="hover:text-brass transition-colors break-all">fryzjertest@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-brass mb-3">Godziny otwarcia</h3>
+          <dl class="grid grid-cols-[auto_1fr] gap-x-6 gap-y-1.5 text-bone/90">
+            <dt>Pon – Pt</dt><dd>9:00 – 19:00</dd>
+            <dt>Sobota</dt><dd>9:00 – 15:00</dd>
+            <dt>Niedziela</dt><dd class="text-stone">Nieczynne</dd>
+          </dl>
+        </div>
+        <div>
+          <h3 class="font-semibold text-brass mb-3">Obserwuj nas</h3>
+          <a href="https://www.instagram.com/fryzjertest" target="_blank" rel="noopener" class="inline-flex items-center gap-3 border border-ash hover:border-brass rounded-full pl-4 pr-5 py-3 transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>
+            @fryzjertest
+          </a>
+        </div>
+      </div>
+      <div class="mt-14 pt-6 border-t border-ash text-sm text-stone flex flex-col sm:flex-row gap-2 sm:justify-between">
+        <p>© <span id="year">2026</span> Fryzjertest. Wszelkie prawa zastrzeżone.</p>
+        <p>fryzjertestwarszawa.pl</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobilny pasek akcji -->
+  <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-ink/95 backdrop-blur border-t border-ash px-4 pt-3 grid grid-cols-2 gap-3" style="padding-bottom: calc(.75rem + env(safe-area-inset-bottom, 0px))">
+    <a href="tel:111222333" class="flex justify-center items-center border border-ash rounded-full py-3 text-sm font-semibold">Zadzwoń</a>
+    <a href="#rezerwacja" class="flex justify-center items-center bg-brass text-ink rounded-full py-3 text-sm font-semibold">Umów wizytę</a>
+  </div>
+
+  <script>
+    // Rok w stopce
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Tło nawigacji po przewinięciu
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      nav.style.backgroundColor = window.scrollY > 24 ? 'rgba(27,26,25,.92)' : 'transparent';
+      nav.style.backdropFilter = window.scrollY > 24 ? 'blur(10px)' : 'none';
+      nav.style.webkitBackdropFilter = nav.style.backdropFilter;
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Godziny do wyboru (co 30 min, 9:00 – 18:30)
+    const timeSelect = document.getElementById('time');
+    for (let h = 9; h < 19; h++) {
+      ['00', '30'].forEach(m => {
+        const o = document.createElement('option');
+        o.textContent = h + ':' + m;
+        timeSelect.appendChild(o);
+      });
+    }
+
+    // Formularz
+    const form = document.getElementById('booking');
+    const success = document.getElementById('success');
+    const error = document.getElementById('error');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const phone = form.phone.value.trim();
+      const service = form.service.value;
+      const time = form.time.value;
+      const digits = phone.replace(/\D/g, '');
+
+      if (!name || digits.length < 9 || !service || !time) {
+        error.classList.remove('hidden');
+        return;
+      }
+      error.classList.add('hidden');
+
+      /* UWAGA: tu zgłoszenie nie jest jeszcze nigdzie wysyłane.
+         Aby dostawać je na e-mail, podmień kod poniżej na fetch() do usługi
+         takiej jak Formspree lub Web3Forms. */
+
+      document.getElementById('s-name').textContent = name;
+      document.getElementById('s-service').textContent = service.split(' – ')[0].toLowerCase();
+      document.getElementById('s-time').textContent = time;
+      document.getElementById('s-phone').textContent = phone;
+      form.classList.add('hidden');
+      success.classList.remove('hidden');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    document.getElementById('again').addEventListener('click', () => {
+      form.reset();
+      success.classList.add('hidden');
+      form.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
